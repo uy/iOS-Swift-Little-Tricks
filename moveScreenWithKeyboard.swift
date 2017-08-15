@@ -1,3 +1,5 @@
+// Link: https://stackoverflow.com/questions/26070242/move-view-with-keyboard-using-swift
+
 override func viewDidLoad() {
     super.viewDidLoad()            
     NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
