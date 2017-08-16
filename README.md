@@ -1,2 +1,2 @@
 # iOS-Swift-Little-Tricks
-Little tricks should be known
+This repository contains useful little codes for about Swift.
