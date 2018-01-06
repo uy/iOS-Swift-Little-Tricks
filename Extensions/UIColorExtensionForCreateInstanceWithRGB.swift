@@ -9,3 +9,6 @@ extension UIColor {
         )
     }
 }
+
+// Sample Usage
+val carrotColor = UIColor(rgb: 0xe67e22)
