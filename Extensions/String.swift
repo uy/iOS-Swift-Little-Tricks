@@ -1,3 +1,4 @@
+// Define
 extension String {
   // return from start to given index
   subscript (i: Int) -> Character {
