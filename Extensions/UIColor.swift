@@ -1,4 +1,4 @@
-
+// Define
 extension UIColor {
     convenience init(rgb: UInt) {
         self.init(
