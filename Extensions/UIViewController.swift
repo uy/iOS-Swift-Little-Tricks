@@ -44,3 +44,6 @@ extension UIViewController {
 
 // Usage
 self.showToast(message: result.mesaj)
+self.showToast(message: result.mesaj) {
+    // Do Something
+}
