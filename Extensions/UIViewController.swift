@@ -1,5 +1,6 @@
 // Define
 extension UIViewController {
+    
     func showToast(message : String) {
         let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 125, y: self.view.frame.size.height-100, width: 250, height: 35))
         toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
@@ -40,10 +41,26 @@ extension UIViewController {
             comp()
         })
     }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
 
 // Usage
 self.showToast(message: result.mesaj)
 self.showToast(message: result.mesaj) {
     // Do Something
+}
+
+// Usage
+override func viewDidLoad() {
+    super.viewDidLoad()
+    self.hideKeyboardWhenTappedAround()
 }
