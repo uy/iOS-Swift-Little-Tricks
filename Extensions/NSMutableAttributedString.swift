@@ -1,3 +1,4 @@
+// Define
 extension NSMutableAttributedString {
     @discardableResult func bold(_ text:String) -> NSMutableAttributedString {
         let attrs: [String: AnyObject] = [NSFontAttributeName: UIFont.boldSystemFont(ofSize: UIFont.systemFontSize)]
