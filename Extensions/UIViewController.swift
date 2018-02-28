@@ -1,4 +1,4 @@
-
+// Define
 extension UIViewController {
     func showToast(message : String) {
         let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 125, y: self.view.frame.size.height-100, width: 250, height: 35))
@@ -41,3 +41,6 @@ extension UIViewController {
         })
     }
 }
+
+// Usage
+self.showToast(message: result.mesaj)
