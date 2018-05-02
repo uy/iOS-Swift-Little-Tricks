@@ -3,3 +3,5 @@
 [How can I force landscape mode in one viewController](https://stackoverflow.com/a/48490331/1545139)
 
 [When landscape, textField's inputAccessoryView doesn't shown](https://stackoverflow.com/a/46421548/1545139)
+
+[Animating autoLayout doesn't work](https://stackoverflow.com/questions/32170893/animate-autolayout-constraints-doesnt-work-on-ios-7)
