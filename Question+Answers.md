@@ -5,3 +5,7 @@
 [When landscape, textField's inputAccessoryView doesn't shown](https://stackoverflow.com/a/46421548/1545139)
 
 [Animating autoLayout doesn't work](https://stackoverflow.com/questions/32170893/animate-autolayout-constraints-doesnt-work-on-ios-7)
+
+[When can I activate/deactivate layout constraints?](https://stackoverflow.com/a/28717185/1545139)
+```
+TL;DR: Delete weak statement from IB Outlet decleration.
