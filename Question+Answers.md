@@ -9,3 +9,6 @@
 [When can I activate/deactivate layout constraints?](https://stackoverflow.com/a/28717185/1545139)
 ```
 TL;DR: Delete weak statement from IB Outlet decleration.
+```
+
+[How to angle a uilabel in ios [duplicate]](https://stackoverflow.com/a/17523030/1545139)
