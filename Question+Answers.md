@@ -29,3 +29,12 @@ TL;DR: Delete weak statement from IB Outlet decleration.
 ```
 TL;DR: Use 'func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)' from UITableViewDelegate
 ```
+
+---
+
+[WKWebView is not loading url](https://stackoverflow.com/a/47605305/1545139)
+```
+TL;DR: you just need to take permission of TransportSecurit to YES in info.plist file
+```
+
+---
