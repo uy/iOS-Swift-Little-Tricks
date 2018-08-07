@@ -38,3 +38,15 @@ TL;DR: you just need to take permission of TransportSecurit to YES in info.plist
 ```
 
 ---
+
+[How can i change marker icon while clustering, Google Maps, iOS](https://stackoverflow.com/a/39788560/1545139)
+```
+TL;DR: You should add your code to below function, for adding custom marker icon
+- (GMSMarker *)markerWithPosition:(CLLocationCoordinate2D)position
+                             from:(CLLocationCoordinate2D)from
+                         userData:(id)userData
+                      clusterIcon:(UIImage *)clusterIcon
+                         animated:(BOOL)animated
+```
+
+---
