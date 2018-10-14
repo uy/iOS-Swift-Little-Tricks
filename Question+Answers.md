@@ -52,5 +52,7 @@ TL;DR: You should add your code to below function, for adding custom marker icon
 ---
 
 [Move a view up only when the keyboard covers an input field](https://stackoverflow.com/a/28813720)
-
+```
+Gist for my solution is [here](https://gist.github.com/uy/783ab5bbeeea84a5a4288d12384b05a3).
+```
 ---
