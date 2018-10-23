@@ -59,7 +59,7 @@ Gist for my solution is [here](https://gist.github.com/uy/783ab5bbeeea84a5a4288d
 ---
 
 [How to set cornerRadius for only top-left and top-right corner of a UIView?](https://stackoverflow.com/a/41197790)
-```
+```swift
 UIView *view = [[UIView alloc] initWithFrame:frame];
 
 CALayer *layer = [CALayer layer];
