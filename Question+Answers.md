@@ -71,3 +71,39 @@ extension UIView {
 ```
 
 ---
+
+[TextField's value change handling](https://stackoverflow.com/a/34783809)
+```swift
+// case: textfields' isEnabled property depend on each other's value
+
+// Setup Func
+private func setupTextfields() {
+    tfSerialNumber.tag = 1
+    tfSerialNumber.addTarget(self, action: #selector(textFieldValueChanged(textField:)), for: .editingChanged)
+
+    tfRequestNumber.tag = 2
+    tfRequestNumber.addTarget(self, action: #selector(textFieldValueChanged(textField:)), for: .editingChanged)
+}
+
+// Target Func
+@objc private func textFieldValueChanged(textField: UITextField) {
+    if let t = tfSerialNumber.text {
+        if !t.isEmpty {
+            tfRequestNumber.text = ""
+            tfRequestNumber.isEnabled = false
+        } else {
+            tfRequestNumber.isEnabled = true
+        }
+    }
+    if let t = tfRequestNumber.text {
+        if !t.isEmpty {
+            tfSerialNumber.text = ""
+            tfSerialNumber.isEnabled = false
+        } else {
+            tfSerialNumber.isEnabled = true
+        }
+    }
+}
+```
+
+---
