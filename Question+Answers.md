@@ -55,4 +55,17 @@ TL;DR: You should add your code to below function, for adding custom marker icon
 ```
 Gist for my solution is [here](https://gist.github.com/uy/783ab5bbeeea84a5a4288d12384b05a3).
 ```
+
+---
+
+[How to set cornerRadius for only top-left and top-right corner of a UIView?](https://stackoverflow.com/a/41197790)
+```
+UIView *view = [[UIView alloc] initWithFrame:frame];
+
+CALayer *layer = [CALayer layer];
+UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRoundedRect:frame byRoundingCorners:(UIRectCornerTopLeft|UIRectCornerTopRight) cornerRadii:CGSizeMake(3.0, 3.0)];
+layer.shadowPath = shadowPath.CGPath;
+view.layer.mask = layer;
+```
+
 ---
