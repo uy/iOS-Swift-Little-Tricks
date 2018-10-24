@@ -107,3 +107,17 @@ private func setupTextfields() {
 ```
 
 ---
+
+[Moya : Parameter Encoding for POST method not working. #1116](https://github.com/Moya/Moya/issues/1116)
+```swift
+    public var parameterEncoding: ParameterEncoding {
+        switch self {
+        case .postMethodButParametersShouldSendOverURL:
+            return URLEncoding(destination: .queryString)
+        default:
+            return URLEncoding.default
+        }
+    }
+```
+
+---
