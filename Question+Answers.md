@@ -3,7 +3,7 @@
 ---
 
 [How can I force landscape mode in one viewController](https://stackoverflow.com/a/48490331/1545139)
-
+[my resolution is here](https://stackoverflow.com/a/53263160/1545139)
 ---
 
 [When landscape, textField's inputAccessoryView doesn't shown](https://stackoverflow.com/a/46421548/1545139)
