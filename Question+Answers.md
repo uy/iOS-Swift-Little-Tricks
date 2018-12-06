@@ -134,3 +134,12 @@ extension String {
 ```
 
 ---
+
+[How can my iphone app detect its own version number?](https://stackoverflow.com/a/18669222/1545139)
+```swift
+if let appVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String {
+    yourCoolLabel.text = "v\(appVersion)"
+}
+```
+
+---
