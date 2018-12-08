@@ -143,3 +143,20 @@ if let appVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersi
 ```
 
 ---
+
+[Can you animate a height change on a UITableViewCell when selected?](https://stackoverflow.com/questions/460014/can-you-animate-a-height-change-on-a-uitableviewcell-when-selected)
+```swift
+extension CreatePlayStep2VC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.beginUpdates()
+        tableView.endUpdates()
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        tableView.beginUpdates()
+        tableView.endUpdates()
+    }
+}
+```
+
+---
