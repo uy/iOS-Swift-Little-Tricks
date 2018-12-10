@@ -160,3 +160,15 @@ extension CreatePlayStep2VC: UITableViewDelegate {
 ```
 
 ---
+
+[Changing a cell's value affect other cells](https://medium.com/ios-seminar/why-we-use-dequeuereusablecellwithidentifier-ce7fd97cde8e)
+```swift
+
+override func prepareForReuse() {
+    super.prepareForReuse()
+    
+    // clear attributes which will re-assign
+}
+```
+
+---
