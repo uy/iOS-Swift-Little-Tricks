@@ -35,7 +35,7 @@ TL;DR: Use 'func tableView(_ tableView: UITableView, willDisplay cell: UITableVi
 ---
 
 [How can i fit GMSCircle to map?](https://stackoverflow.com/a/35257534/1545139)
-```
+```swift
 import GoogleMaps
 
 extension GMSCircle {
