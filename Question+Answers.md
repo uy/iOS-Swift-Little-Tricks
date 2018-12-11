@@ -34,6 +34,32 @@ TL;DR: Use 'func tableView(_ tableView: UITableView, willDisplay cell: UITableVi
 
 ---
 
+[How can i fit GMSCircle to map?](https://stackoverflow.com/a/35257534/1545139)
+```
+import GoogleMaps
+
+extension GMSCircle {
+    func bounds () -> GMSCoordinateBounds {
+        func locationMinMax(positive : Bool) -> CLLocationCoordinate2D {
+            let sign:Double = positive ? 1 : -1
+            let dx = sign * self.radius  / 6378000 * (180/M_PI)
+            let lat = position.latitude + dx
+            let lon = position.longitude + dx / cos(position.latitude * M_PI/180)   
+            return CLLocationCoordinate2D(latitude: lat, longitude: lon)
+        }
+
+        return GMSCoordinateBounds(coordinate: locationMinMax(true),
+            coordinate: locationMinMax(false))
+    }
+}
+
+// usage
+let update = GMSCameraUpdate.fitBounds(myCircle.bounds())
+myMap.animateWithCameraUpdate(update)
+```
+
+---
+
 [WKWebView is not loading url](https://stackoverflow.com/a/47605305/1545139)
 ```
 TL;DR: you just need to take permission of TransportSecurit to YES in info.plist file
