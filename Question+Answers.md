@@ -28,8 +28,12 @@ TL;DR: Delete weak statement from IB Outlet decleration.
 ---
 
 [UITableViewCell animation](https://stackoverflow.com/a/46928194/1545139)
-```
-TL;DR: Use 'func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)' from UITableViewDelegate
+```swift
+// TL;DR: Use 
+func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    // animation logic
+}
+// from UITableViewDelegate
 ```
 
 ---
