@@ -189,11 +189,26 @@ extension CreatePlayStep2VC: UITableViewDelegate {
 
 [Changing a cell's value affect other cells](https://medium.com/ios-seminar/why-we-use-dequeuereusablecellwithidentifier-ce7fd97cde8e)
 ```swift
-
 override func prepareForReuse() {
     super.prepareForReuse()
     
     // clear attributes which will re-assign
+}
+```
+
+---
+
+[Convert dictionary to Json string in Swift 3](https://stackoverflow.com/a/40210586/1545139)
+```swift
+do {
+    let jsonData = try JSONSerialization.data(withJSONObject: DICT, options: .prettyPrinted)
+    // here "jsonData" is the dictionary encoded in JSON data
+
+    let decoded = try JSONSerialization.jsonObject(with: jsonData, options: [])
+    // here "decoded" is of type `Any`, decoded from JSON data
+    print(String(data: jsonData, encoding: .utf8))
+} catch {
+    print(error.localizedDescription)
 }
 ```
 
